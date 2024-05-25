@@ -208,7 +208,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
+  background: url(../img/intro-bg.jpeg) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -262,7 +262,7 @@ header .intro-text {
 }
 /* About Section */
 #about {
-  padding: 100px 0;
+  padding: 150px 10%;
 }
 #about h3 {
   font-size: 22px;
@@ -278,7 +278,7 @@ header .intro-text {
   content: "";
   background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
   height: 4px;
-  width: 60px;
+  width: 200px;
   bottom: 0;
   left: 0;
 }
@@ -287,23 +287,27 @@ header .intro-text {
   margin-left: 6px;
   list-style: none;
   padding: 0;
+  font-size: medium;
+  line-height: 30px;
 }
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
   color: #5ca9fb;
-  font-size: 11px;
+  font-size: medium;
   font-weight: 300;
   padding-right: 8px;
 }
 #about img {
   width: 520px;
+  margin: auto;
   margin-top: 10px;
   background: #fff;
-  border-right: 0;
+  border-radius: 20px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
 }
 #about p {
+  font-size: medium;
   line-height: 24px;
   margin: 30px 0;
 }
@@ -349,6 +353,82 @@ header .intro-text {
 }
 #services .service-desc {
   margin-bottom: 40px;
+}
+
+.profile-card-2 {
+  background-color: #fff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all linear 0.25s;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: space;
+}
+
+.profile-card-2.fete {
+  background-image: url("../img/services/fete.jpg");
+}
+.profile-card-2.bien-etre {
+  background-image: url("../img/services/bien-etre.jpg");
+}
+
+.profile-card-2.hebergement {
+  background-image: url("../img/services/hebergement.jpg");
+}
+
+.profile-card-2 .profile-name {
+  position: absolute;
+  left: 30px;
+  bottom: 70px;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  color: #fff;
+  transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-username {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  color: #fff;
+  font-size: 13px;
+  transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons .fa {
+  margin: 5px;
+}
+
+.profile-card-2:hover {
+  filter: grayscale(100%);
+}
+
+.profile-card-2:hover .profile-name {
+  bottom: 80px;
+}
+
+.profile-card-2:hover .profile-username {
+  bottom: 60px;
+}
+
+.profile-card-2:hover .profile-icons {
+  right: 40px;
 }
 /* Portfolio Section */
 #portfolio {

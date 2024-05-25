@@ -1,21 +1,19 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Babylon House",
+    "paragraph": "Bienvenue à notre salle des fêtes et espace de détente, l'endroit parfait pour vos célébrations, moments en famille, et séances de bien-être avec piscine, hammam, et jacuzzi. Réservez dès aujourd'hui pour une expérience inoubliable !"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Bienvenue à Babylone House, notre salle des fêtes et espace de détente, le cadre idéal pour toutes vos occasions spéciales. Que ce soit pour célébrer un mariage, organiser une réunion de famille, ou simplement profiter d'un week-end de relaxation, notre établissement vous offre tout ce dont vous avez besoin. Un vrai havre de paix à 1h de route de Paris, venez comme vous êtes, draps et serviettes seront fournis, toutes les commodités se trouvent à moins de 3km. Plongez dans notre piscine, détendez-vous dans notre hammam ou profitez de notre jacuzzi pour un moment de bien-être absolu.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Un cadre idéal pour vos événements et célébrations",
+      "Une piscine pour des moments de détente et de plaisir",
+      "Un jacuzzi pour une expérience de bien-être inégalée"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Un hammam pour une relaxation totale",
+      "Des installations modernes et confortables",
+      "Un lieu calme et apaisant"
     ]
   },
   "Gallery": [
