@@ -313,7 +313,7 @@ header .intro-text {
 }
 /* Services Section */
 #services {
-  padding: 100px 0;
+  padding: 150px 15%;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: #fff;
 }
@@ -361,12 +361,12 @@ header .intro-text {
   background-position: center;
   overflow: hidden;
   position: relative;
-  margin: 10px auto;
+  margin: 50px auto;
   cursor: pointer;
   border-radius: 10px;
   transition: all linear 0.25s;
   width: 100%;
-  height: 500px;
+  height: 60%;
   background-size: cover;
   background-position: center;
   background-repeat: space;
@@ -430,9 +430,73 @@ header .intro-text {
 .profile-card-2:hover .profile-icons {
   right: 40px;
 }
+
+.gallery {
+  display: flex;
+  padding: 2px;
+  transition: 0.3s;
+
+  &:hover &__image {
+    filter: grayscale(1);
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+
+  &__link {
+    margin: 2px;
+    overflow: hidden;
+
+    &:hover {
+      .gallery__image {
+        filter: grayscale(0);
+      }
+
+      .gallery__caption {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__thumb {
+    position: relative;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 15px 15px;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transition: 0.3s;
+  }
+}
+
 /* Portfolio Section */
 #portfolio {
-  padding: 100px 0;
+  padding: 100px 10%;
 }
 .portfolio-item {
   margin: 1px -15px 0 -14px;

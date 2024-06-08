@@ -1,8 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 export const Services = (props) => {
+  const navigate = useNavigate();
+
+  const handleClick = (query) => {
+    navigate(`/gallery?type=${query}`); // Change to the desired path
+  };
+
   return (
     <div id="services" className="text-center">
-      <div className="container">
+      <div className="container" class="container-sm">
         <div className="section-title">
           <h2>Nos Prestations</h2>
           {/* <p>
@@ -12,30 +20,30 @@ export const Services = (props) => {
         </div>
         <div className="row">
           <div class="col-md-4">
-            <div class="profile-card-2 fete">
-              {/* <img src="img/services/fete.jpg" className="img img-responsive" /> */}
-              <div class="profile-name">Fêtes</div>
-              <div class="profile-username">@johndoesurname</div>
+            <div
+              class="profile-card-2 fete"
+              onClick={() => handleClick("Fetes")}
+            >
+              <div class="profile-name">Fêtes et Évènements</div>
+              {/* <div class="profile-username">@johndoesurname</div> */}
             </div>
           </div>
           <div class="col-md-4">
-            <div class="profile-card-2 bien-etre">
-              {/* <img
-                src="img/services/bien-etre.jpg"
-                className="img img-responsive"
-              /> */}
-              <div class="profile-name">Bien être</div>
-              <div class="profile-username">@johndoesurname</div>
+            <div
+              class="profile-card-2 bien-etre"
+              onClick={() => handleClick("Bien-etres")}
+            >
+              <div class="profile-name">Bien êtres</div>
+              {/* <div class="profile-username">@johndoesurname</div> */}
             </div>
           </div>
           <div class="col-md-4">
-            <div class="profile-card-2 hebergement">
-              {/* <img
-                src="https://images.caradisiac.com/images/2/1/0/6/172106/S0-mercedes-amg-classe-a-35-un-prix-de-50-400-eur-569831.jpg"
-                className="img img-responsive"
-              /> */}
-              <div class="profile-name">Hébergement</div>
-              <div class="profile-username">@johndoesurname</div>
+            <div
+              class="profile-card-2 hebergement"
+              onClick={() => handleClick("Hebergements")}
+            >
+              <div class="profile-name">Hébergements</div>
+              {/* <div class="profile-username">@johndoesurname</div> */}
             </div>
           </div>
         </div>
