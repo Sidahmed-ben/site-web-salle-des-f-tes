@@ -1,38 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { NavigationGallery } from "../components/navigationGallery";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { BrowserRouter as Router, Link, useLocation } from "react-router-dom";
-import { Carousel } from "react-responsive-carousel";
-import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
+import "lightgallery.js/dist/css/lightgallery.css";
 
+import { LightgalleryItem } from "react-lightgallery";
 const images = [
   "./img/about11.jpg",
   "./img/about11.jpg",
-  "https://picsum.photos/200/300?image=1050",
-  "https://picsum.photos/300/300?image=202",
-  "https://picsum.photos/300/300?image=202",
-  "https://picsum.photos/300/300?image=202",
-  "https://picsum.photos/300/300?image=202",
-  "https://picsum.photos/300/300?image=202",
-  "./img/about11.jpg",
-  "https://picsum.photos/200/300?image=1050",
-  "https://picsum.photos/300/300?image=202",
-  "https://picsum.photos/300/300?image=202",
-  "https://picsum.photos/300/300?image=202",
   "./img/about11.jpg",
   "./img/about11.jpg",
-  "https://picsum.photos/200/300?image=1050",
-  "https://picsum.photos/300/300?image=202",
-  "https://picsum.photos/300/300?image=202",
-  "https://picsum.photos/300/300?image=202",
-  "https://picsum.photos/300/300?image=202",
-  "https://picsum.photos/300/300?image=202",
 ];
 
 export const ImagesGallery = (props) => {
   const { search } = useLocation();
   const queryValue = React.useMemo(() => new URLSearchParams(search), [search]);
   const [query, setQuery] = useState("");
+
+  const onInit = () => {
+    console.log("lightGallery has been initialized");
+  };
+
   useEffect(() => {
     console.log(queryValue.get("type"));
     switch (queryValue.get("type")) {
@@ -63,26 +50,34 @@ export const ImagesGallery = (props) => {
               dapibus leonec.
             </p>
           </div>
-          <div className="container" style={{}}>
-            <Carousel>
-              <div>
+          <div className="row">
+            <LightgalleryItem
+              group="any"
+              src={
+                "https://images.caradisiac.com/images/2/1/0/6/172106/S0-mercedes-amg-classe-a-35-un-prix-de-50-400-eur-569831.jpg"
+              }
+            >
+              <a
+                href={
+                  "https://images.caradisiac.com/images/2/1/0/6/172106/S0-mercedes-amg-classe-a-35-un-prix-de-50-400-eur-569831.jpg"
+                }
+              >
                 <img
-                  src="https://picsum.photos/300/300?image=202"
-                  height="auto"
-                  width="300px"
+                  src={
+                    "https://images.caradisiac.com/images/2/1/0/6/172106/S0-mercedes-amg-classe-a-35-un-prix-de-50-400-eur-569831.jpg"
+                  }
                 />
-              </div>
-              <div>
-                <img src="./img/about11.jpg" height="300px" width="300px" />
-              </div>
-              <div>
-                <img
-                  src="https://picsum.photos/200/300?image=1050"
-                  height="300px"
-                  width="300px"
-                />
-              </div>
-            </Carousel>
+                <ItemTitle>
+                  <LinesEllipsis
+                    text={"title"}
+                    maxLine="2"
+                    ellipsis="..."
+                    trimRight
+                    basedOn="letters"
+                  />
+                </ItemTitle>
+              </a>
+            </LightgalleryItem>
           </div>
         </div>
       </div>

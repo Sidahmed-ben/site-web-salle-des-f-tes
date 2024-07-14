@@ -15,7 +15,9 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/gallery" element={<ImagesGallery />}></Route>
+        <LightgalleryProvider galleryClassName="my_custom_classname">
+          <Route path="/gallery" element={<ImagesGallery />}></Route>
+        </LightgalleryProvider>
       </Routes>
     </BrowserRouter>
   );
