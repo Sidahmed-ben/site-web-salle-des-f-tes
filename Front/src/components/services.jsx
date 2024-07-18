@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 
 export const Services = (props) => {
   const navigate = useNavigate();
-
   const handleClick = (query) => {
     navigate(`/gallery?type=${query}`); // Change to the desired path
   };
