@@ -8,65 +8,65 @@ import "react-image-lightbox/style.css";
 
 const photos = [
   {
-    src: "./img/bien-etre/1.jpeg",
+    src: "https://drive.google.com/thumbnail?id=1Dq2HEEUdtwgbXxhhlvA0wsogjSslgl_Y&sz=w1000",
     width: 720,
     height: 1600,
   },
   {
-    src: "./img/bien-etre/2.jpeg",
+    src: "https://drive.google.com/thumbnail?id=1-D0iuFtkNSekkexeFQsGuDScS1ifcT7Q&sz=w1000",
     width: 1600,
     height: 720,
   },
-  {
-    src: "./img/bien-etre/3.jpeg",
-    width: 720,
-    height: 1600,
-  },
-  {
-    src: "./img/bien-etre/1.jpeg",
-    width: 720,
-    height: 1600,
-  },
-  {
-    src: "./img/bien-etre/2.jpeg",
-    width: 1600,
-    height: 720,
-  },
-  {
-    src: "./img/bien-etre/3.jpeg",
-    width: 720,
-    height: 1600,
-  },
-  {
-    src: "./img/bien-etre/1.jpeg",
-    width: 720,
-    height: 1600,
-  },
-  {
-    src: "./img/bien-etre/2.jpeg",
-    width: 1600,
-    height: 720,
-  },
-  {
-    src: "./img/bien-etre/3.jpeg",
-    width: 720,
-    height: 1600,
-  },
-  {
-    src: "./img/bien-etre/1.jpeg",
-    width: 720,
-    height: 1600,
-  },
-  {
-    src: "./img/bien-etre/2.jpeg",
-    width: 1600,
-    height: 720,
-  },
-  {
-    src: "./img/bien-etre/3.jpeg",
-    width: 720,
-    height: 1600,
-  },
+  // {
+  //   src: "./img/bien-etre/3.jpeg",
+  //   width: 720,
+  //   height: 1600,
+  // },
+  // {
+  //   src: "./img/bien-etre/1.jpeg",
+  //   width: 720,
+  //   height: 1600,
+  // },
+  // {
+  //   src: "./img/bien-etre/2.jpeg",
+  //   width: 1600,
+  //   height: 720,
+  // },
+  // {
+  //   src: "./img/bien-etre/3.jpeg",
+  //   width: 720,
+  //   height: 1600,
+  // },
+  // {
+  //   src: "./img/bien-etre/1.jpeg",
+  //   width: 720,
+  //   height: 1600,
+  // },
+  // {
+  //   src: "./img/bien-etre/2.jpeg",
+  //   width: 1600,
+  //   height: 720,
+  // },
+  // {
+  //   src: "./img/bien-etre/3.jpeg",
+  //   width: 720,
+  //   height: 1600,
+  // },
+  // {
+  //   src: "./img/bien-etre/1.jpeg",
+  //   width: 720,
+  //   height: 1600,
+  // },
+  // {
+  //   src: "./img/bien-etre/2.jpeg",
+  //   width: 1600,
+  //   height: 720,
+  // },
+  // {
+  //   src: "./img/bien-etre/3.jpeg",
+  //   width: 720,
+  //   height: 1600,
+  // },
 ];
 
 export const ImagesGallery = (props) => {
