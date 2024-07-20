@@ -7999,7 +7999,7 @@ react-lightgallery@^0.9.0:
     prop-types "^15.7.2"
     uniqid "^5.2.0"
 
-react-modal@^3.11.1:
+react-modal@^3.11.1, react-modal@^3.16.1:
   version "3.16.1"
   resolved "https://registry.npmjs.org/react-modal/-/react-modal-3.16.1.tgz"
   integrity sha512-VStHgI3BVcGo7OXczvnJN7yT2TWHJPDXZWyI/a0ssFNhGZWsPmB8cF0z33ewDXq4VfYMO1vXgiv/g8Nj9NDyWg==

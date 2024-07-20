@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import SmoothScroll from "smooth-scroll";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ImagesGallery } from "./pages/ImagesGallery";
+
 import "./App.css";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
