@@ -1,0 +1,31 @@
+/* ModalStyles.css */
+
+.modal-title {
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  color: #58a103;
+}
+
+p.modal-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  color: #666;
+  margin: 2em 0;
+  text-align: center;
+}
+
+.close-button {
+  background-color: #5ca9fb;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #0056b3;
+}
