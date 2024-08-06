@@ -22,7 +22,34 @@ export const Contact = (props) => {
     setMessage("");
   };
 
-  const handleSubmit = (e) => {
+  const sendMail = async (email, name, message) => {
+    let sended = true;
+    // Remplacez ces données par celles que vous souhaitez envoyer
+    const data = {
+      email,
+      name,
+      message,
+    };
+    const response = await fetch("http://127.0.0.1:5000/api/send-mail", {
+      method: "POST", // Spécifie que la méthode est POST
+      headers: {
+        "Content-Type": "application/json", // Indique que le corps de la requête est en JSON
+      },
+      body: JSON.stringify(data), // Convertit les données en JSON
+    });
+
+    // Vérifie si la requête a été effectuée avec succès
+    if (!response.ok) {
+      alert(
+        "Une erreur s'est produite lors de l'envoi du mail, veuillez réessayer plus tard"
+      );
+      return !sended;
+    }
+    return sended;
+  };
+
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(name, email, message);
 
@@ -32,12 +59,8 @@ export const Contact = (props) => {
     if (!name || !email || !message) {
       return alert("Veuillez remplir tous les champs du formulaire");
     }
-
-    // RAjouter ici le code pour envoyer le message
-    // RAjouter ici le code pour envoyer le message
-    // RAjouter ici le code pour envoyer le message
-    // RAjouter ici le code pour envoyer le message
-
+    // Send mail
+    await sendMail(email, name, message);
     clearState();
     setModalIsOpen(true); // Ouvrir la modal
   };
